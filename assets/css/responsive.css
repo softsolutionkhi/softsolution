@@ -1,0 +1,36 @@
+/* ==========================================================================
+   SOFTSOLUTION - Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 992px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 15px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        display: none; /* Controlled by JavaScript */
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
