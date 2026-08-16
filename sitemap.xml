@@ -3,40 +3,40 @@
 
   <!-- Home Page -->
   <url>
-    <loc>https://softsolutionkhi.github.io/softsolution/</loc>
-    <lastmod>2026-08-15</lastmod>
+    <loc>https://softsolutionkhi.github.io/</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Services Page -->
   <url>
-    <loc>https://softsolutionkhi.github.io/softsolution/pages/services.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <loc>https://softsolutionkhi.github.io/pages/services.html</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Portfolio Page -->
   <url>
-    <loc>https://softsolutionkhi.github.io/softsolution/pages/portfolio.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <loc>https://softsolutionkhi.github.io/pages/portfolio.html</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- About Us Page -->
   <url>
-    <loc>https://softsolutionkhi.github.io/softsolution/pages/about.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <loc>https://softsolutionkhi.github.io/pages/about.html</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Contact Page -->
   <url>
-    <loc>https://softsolutionkhi.github.io/softsolution/pages/contact.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <loc>https://softsolutionkhi.github.io/pages/contact.html</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
