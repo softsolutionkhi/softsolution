@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap Location
-Sitemap: https://softsolutionkhi.github.io/softsolution/sitemap.xml
+Sitemap: https://softsolutionkhi.github.io/sitemap.xml
