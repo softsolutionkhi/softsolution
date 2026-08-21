@@ -213,6 +213,8 @@ function updateHalalLifeDots() {
 
     dotsContainer.appendChild(dot);
   });
+
+  
 }
 
 document.addEventListener("DOMContentLoaded", () => {
