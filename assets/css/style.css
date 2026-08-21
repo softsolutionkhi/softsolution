@@ -1958,3 +1958,96 @@ footer {
     .product-hero-container { grid-template-columns: 1fr; }
     .features-grid, .gallery-grid, .specs-box { grid-template-columns: 1fr; }
 }
+
+/* WhatsApp Highlight Box */
+.whatsapp-feature-box {
+    background: linear-gradient(135deg, #052e16 0%, #064e3b 100%);
+    border: 2px solid #10b981;
+    border-radius: 20px;
+    padding: 35px;
+    color: #ffffff;
+    margin-top: 40px;
+    box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.2);
+}
+
+.wa-badge {
+    background-color: #25d366;
+    color: #000000;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.wa-box-header h2 {
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.wa-box-header p {
+    color: #a7f3d0;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.wa-feature-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.wa-item {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.wa-item i {
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.icon-red { color: #f87171; }
+.icon-green { color: #4ade80; }
+.icon-blue { color: #60a5fa; }
+
+.wa-item h4 {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.wa-item p {
+    font-size: 13px;
+    color: #cbd5e1;
+    line-height: 1.4;
+}
+
+/* Image Hover Styling */
+.img-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.img-box img:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 992px) {
+    .wa-feature-list { grid-template-columns: 1fr; }
+}
