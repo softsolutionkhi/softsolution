@@ -1648,3 +1648,178 @@ footer {
     font-weight: 700;
     margin-left: 3px;
 }
+
+/* ==========================================================================
+   Our Products Grid Section
+   ========================================================================== */
+.products-section {
+    padding: 60px 0;
+    background-color: #f8fafc;
+}
+
+.sub-title-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: #e0f2fe;
+    color: #0284c7;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.section-desc {
+    color: #64748b;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.product-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.08);
+}
+
+/* Emoji Boxes & Soft Light Color Backgrounds */
+.product-icon-box {
+    width: 65px;
+    height: 65px;
+    min-width: 65px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.bg-blue { background-color: #eff6ff; }
+.bg-green { background-color: #f0fdf4; }
+.bg-purple { background-color: #faf5ff; }
+.bg-yellow { background-color: #fefce8; }
+.bg-pink { background-color: #fdf2f8; }
+.bg-light-green { background-color: #ecfdf5; }
+.bg-sky { background-color: #f0f9ff; }
+.bg-lavender { background-color: #f5f3ff; }
+.bg-peach { background-color: #fff7ed; }
+
+.product-info h3 {
+    font-size: 17px;
+    color: #0f172a;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 6px;
+}
+
+.product-info p {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+
+.btn-view-details {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-view-details:hover {
+    background-color: #1d4ed8;
+}
+
+/* Bottom Custom Solution Banner */
+.custom-solution-banner {
+    margin-top: 40px;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 16px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-col {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.banner-icon {
+    width: 45px;
+    height: 45px;
+    background-color: #dbeafe;
+    color: #2563eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.banner-icon.wa-bg {
+    background-color: #dcfce7;
+    color: #16a34a;
+}
+
+.banner-col h4 {
+    font-size: 16px;
+    color: #1e293b;
+    font-weight: 700;
+}
+
+.banner-col p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.label-sm {
+    display: block;
+    font-size: 11px;
+    color: #64748b;
+    text-transform: uppercase;
+}
+
+.banner-link {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0f172a;
+    text-decoration: none;
+}
+
+/* Mobile Screen Responsiveness */
+@media (max-width: 992px) {
+    .products-grid { grid-template-columns: repeat(2, 1fr); }
+    .custom-solution-banner { flex-direction: column; gap: 15px; align-items: flex-start; }
+}
+
+@media (max-width: 600px) {
+    .products-grid { grid-template-columns: 1fr; }
+}
