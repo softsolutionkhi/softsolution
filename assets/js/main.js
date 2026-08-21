@@ -49,6 +49,9 @@ async function loadIncludes() {
             .replaceAll('src="assets/', 'src="../assets/');
         }
         footerPlaceholder.innerHTML = html;
+
+        // Fetch Visitors Count right after footer HTML is rendered
+        fetchVisitorCount();
       }
     } catch (err) {
       console.error("Footer Load Error:", err);
@@ -56,9 +59,31 @@ async function loadIncludes() {
   }
 }
 
+// Fetch Live Total Visitors Count
+function fetchVisitorCount() {
+  const visitorElement = document.getElementById("visitor-count");
+  if (!visitorElement) return;
+
+  fetch(
+    "https://hits.seeyoufarm.com/api/count/incr/badge.json?url=https%3A%2F%2Fsoftsolutionkhi.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      if (data && data.value) {
+        visitorElement.innerText = data.value.toLocaleString();
+      } else {
+        visitorElement.innerText = "1";
+      }
+    })
+    .catch(() => {
+      visitorElement.innerText = "1";
+    });
+}
+
 // Highlight Current Active Page Link
 function setActiveNavLink() {
-  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  const currentPage =
+    window.location.pathname.split("/").pop() || "index.html";
   const navLinks = document.querySelectorAll(".nav-menu a");
 
   navLinks.forEach((link) => {
@@ -159,7 +184,7 @@ const halalLifeScreenshots = [
   "../assets/images/halal_life_6.jpeg",
   "../assets/images/halal_life_7.jpeg",
   "../assets/images/halal_life_8.jpeg",
-  "../assets/images/halal_life_9.jpeg"
+  "../assets/images/halal_life_9.jpeg",
 ];
 
 let halalLifeCurrent = 0;
@@ -213,8 +238,6 @@ function updateHalalLifeDots() {
 
     dotsContainer.appendChild(dot);
   });
-
-  
 }
 
 document.addEventListener("DOMContentLoaded", () => {
