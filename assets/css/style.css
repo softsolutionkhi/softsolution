@@ -1618,3 +1618,33 @@ footer {
 .nav-menu li a.active {
     color: #0066ff;
 }
+
+/* Total Visitors Counter Styling */
+.visitor-counter {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 6px 14px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+}
+
+.visitor-icon {
+    color: #ffb703; /* پیلا آیکون (Yellow Icon) */
+    font-size: 20px;
+}
+
+.visitor-text {
+    color: #cbd5e1;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.visitor-text strong {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    margin-left: 3px;
+}
