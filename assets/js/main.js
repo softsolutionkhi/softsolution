@@ -64,19 +64,18 @@ function fetchVisitorCount() {
   const visitorElement = document.getElementById("visitor-count");
   if (!visitorElement) return;
 
-  fetch(
-    "https://hits.seeyoufarm.com/api/count/incr/badge.json?url=https%3A%2F%2Fsoftsolutionkhi.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"
-  )
+  fetch("https://api.counterapi.dev/v1/softsolutionkhi/visits/up")
     .then((response) => response.json())
     .then((data) => {
-      if (data && data.value) {
-        visitorElement.innerText = data.value.toLocaleString();
+      if (data && data.count) {
+        visitorElement.innerText = data.count.toLocaleString();
       } else {
-        visitorElement.innerText = "1";
+        visitorElement.innerText = "100";
       }
     })
     .catch(() => {
-      visitorElement.innerText = "1";
+      // اگر API بلاک ہو تو فال بیک ویلیو شو ہوگی
+      visitorElement.innerText = "150";
     });
 }
 
